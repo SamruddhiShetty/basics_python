@@ -3,10 +3,8 @@ from collections import deque
 
 class Solution:
     def __init__(self):
-        #i=0
         self.stack=list()
         self.queue=deque()
-    # Write your code here
     def pushCharacter(self,c1):
         self.stack.append(c1)
     def enqueueCharacter(self,c2):
