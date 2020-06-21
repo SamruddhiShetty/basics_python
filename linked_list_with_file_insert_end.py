@@ -20,16 +20,6 @@ def print_singly_linked_list(node, sep, fptr):
         if node:
             fptr.write(sep)
 
-# Complete the insertNodeAtTail function below.
-
-#
-# For your reference:
-#
-# SinglyLinkedListNode:
-#     int data
-#     SinglyLinkedListNode next
-#
-#
 def insertNodeAtTail(head, data):
     node=SinglyLinkedListNode(data)
     current=head
