@@ -50,8 +50,7 @@ def has_cycle(head):
             return True
     return False
 
-
-# dont know the exact logic behind the main function part
+# check the main function restricted use
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
