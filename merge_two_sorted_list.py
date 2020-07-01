@@ -91,7 +91,8 @@ if __name__ == '__main__':
             llist2_item = int(input())
             llist2.insert_node(llist2_item)
 
-        llist3 = mergeLists(llist1.head, llist2.head)
+        llist3 = mergeLists(llist1.head, llist2.head)    # when we recieve the returned object we recieve it as a new object to use it further
+        # here llist3 is of type SinglyLinkedList eith attributes data and pointer left and right 
 
         print_singly_linked_list(llist3, ' ', fptr)
         fptr.write('\n')
