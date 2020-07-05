@@ -56,3 +56,23 @@ v = list(map(int, input().split()))
 
 ans = lca(tree.root, v[0], v[1])
 print (ans.info)
+
+#the above solution takes 156ms to execute
+
+class solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+          if root.val==p.val or root.val==q.val:
+              return root
+          p_left=(p.val < root.val)
+          q_left=(q.val < root.val)
+        #move it to the left subtree
+          if p_left and q_left:
+              return self.lowestCommonAncestor(root.left, p, q)
+        #move it to right subtree
+          elif not p_left and not q_left:
+              return self.lowestCommonAncestor(root.right, p, q)
+        #here we have already reached the lca
+          else:
+              return root
+        
+#this solution takes 120ms to exceute
