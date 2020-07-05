@@ -7,8 +7,6 @@ class Node:
         self.info=data
         self.left=None
         self.right=None
-    def __str__(self):
-        return(self.info)
         
 class Binary_tree:
     def __init__(self):
