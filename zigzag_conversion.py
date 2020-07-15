@@ -20,6 +20,5 @@ class Solution:
         return s1
  #efficiency is time=O(n) and space=O(n).
  
- #also be done by sort by row
             
         
