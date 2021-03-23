@@ -41,6 +41,8 @@ def pre_order(root):
         
         pre_order(root.right)
         
+   
+        
 def in_order(root):
     if root:
         in_order(root.left)
@@ -59,7 +61,12 @@ def post_order(root):
         print(root.info, end=" ")
         
         
-
+ def heightOfTree(self, root):
+        if root==None:
+            return 0
+        else:
+            return max(self.heightOfTree(root.left), self.heightOfTree(root.right))+1
+        
     
         
 if __name__=="__main__":
@@ -88,4 +95,9 @@ if __name__=="__main__":
             post_order(tree2)
         else:
             break
+            
+            
+    #for all the operations        
+    #time complexity=O(n)
+   #space complexity=O(h)- height of the tree(recursive stack)
             
